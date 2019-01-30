@@ -83,7 +83,15 @@ class App extends Component {
         <main>
           <Route
             path="/"
-            render={props => <Display {...props} state={this.state} />}
+            render={props => (
+              <Display
+                {...props}
+                balls={this.state.balls}
+                strikes={this.state.strikes}
+                fouls={this.state.fouls}
+                hits={this.state.hits}
+              />
+            )}
             exact
           />
           <Route

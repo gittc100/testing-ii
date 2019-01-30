@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 
 describe("App Component", () => {
-  it("renders without crashing", () => {
+  it("Renders Without Crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(<Router><App /></Router>, div);
     ReactDOM.unmountComponentAtNode(div);
